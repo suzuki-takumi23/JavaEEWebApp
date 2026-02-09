@@ -13,6 +13,15 @@ public class HelloServlet extends HttpServlet {
 protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 	 resp.setContentType("text/html charset=UTF-8");
 	 PrintWriter out = resp.getWriter();
-	 out.println("<h1>Hello, Jenkins</h1>");
+	 String text = """
+	 				<html>
+	 					<head>
+	 						<title>たいとる</title>
+	 					</head>
+	 					<body>
+	 						<h1>やーい、ばーかばーか</h1>
+	 					</body>
+	 				</html>
+	 				""";
  }
 }
