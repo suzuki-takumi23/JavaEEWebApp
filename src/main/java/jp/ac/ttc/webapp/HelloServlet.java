@@ -23,5 +23,6 @@ protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws Se
 	 					</body>
 	 				</html>
 	 				""";
+	 out.println(text);
  }
 }
